@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constant Folding Optimizer + Expression Tree</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔧 Constant Folding Optimizer</h1>
+    <p>Enter an arithmetic expression (e.g. <code>2 + 3 * 4 + x</code>)</p>
+    <input type="text" id="expression" placeholder="Enter expression..." />
+    <button id="optimize">Optimize</button>
+
+    <div class="output">
+      <h3>Optimized Expression:</h3>
+      <p id="optimized"></p>
+    </div>
+
+    <div class="output">
+      <h3>Evaluation Result:</h3>
+      <p id="result"></p>
+    </div>
+
+    <div class="tree-section">
+      <h3>Before Optimization:</h3>
+      <div id="tree-before" class="tree"></div>
+
+      <h3>After Optimization:</h3>
+      <div id="tree-after" class="tree"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
